@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/wxshow/show",
+    "pages/test/test",
+    "pages/addCgi/addCgi"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Wafer Quick Start",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+    
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath": "image/icon_component_HL.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/wxshow/show",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath": "image/icon_component_HL.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+	"client": "./client",
+	"svr": "./server",
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wx5f79aff405fa2907",
+	"projectname": "weixindemo",
+	"compileType": "miniprogram",
+	"condition": {}
+}
