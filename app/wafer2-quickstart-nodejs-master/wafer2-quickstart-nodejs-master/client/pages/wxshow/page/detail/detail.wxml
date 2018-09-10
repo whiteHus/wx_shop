@@ -1,0 +1,36 @@
+<!-- 产品详情页 -->
+<view class="detail-main">
+    <!-- 产品大图 -->
+    <view class="detail-product">
+      <image class="detail-product-img"
+       src="{{productInfo.productImg}}"/>
+    </view>
+    <!-- 产品属性展示 -->
+    <view class="detail-attr">
+      <view class="detail-attr-name">{{productInfo.productName}}</view>
+      <view class="detail-attr-price">
+        <view class="detail-attr-sellPrice">￥{{productInfo.sellPrice}}</view>
+        <view class="detail-attr-nosell">{{productInfo.price}}</view>
+      </view>
+      <view class="detail-stock-sales">
+          <view class="detail-stock-item">库存：{{productInfo.stock}}</view>
+          <view class="detail-stock-item">销量：{{productInfo.sales}}</view> 
+          <view class="detail-stock-item">限购：1</view>
+      </view>
+      <view class="detail-share">
+          <image class="detail-share-img" src="../../../../image/red_share.png"></image>
+          <text class="detail-share-text">分享</text>
+      </view>
+    </view>
+    <!-- 产品详情和评价 -->
+    <view class="detail-info">
+      <view class="detail-tags">
+        <view bindtap="showdetail" data-tag="{{1}}" class="{{detail?'detail-tag detail-select':'detail-tag'}}">详情</view>
+        <view bindtap="showdetail" data-tag="{{0}}" class="{{detail?'detail-tag':'detail-tag detail-select'}}">评价</view>
+      </view>
+      <view>
+        <view wx:if="{{detail}}">产品详情</view>
+        <view wx:if="{{!detail}}">评价</view>
+      </view>
+    </view>
+</view>

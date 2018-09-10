@@ -1,0 +1,40 @@
+
+<import src="../common/product-item-template/product-item-template.wxml" />
+<view class="home-cantain">
+  <!-- 轮播图 -->
+  <view class="home-picture">
+    <swiper 
+    autoplay="true" 
+    interval="3000" 
+    indicator-dots="true" 
+    indicator-color="#666" 
+    indicator-active-color="#ffffff"
+    circular="true"
+    >
+        <block wx:for="{{imgUrls}}"  wx:key="id" wx:for-index="idx" wx:for-item="item">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" />
+            </swiper-item>
+        </block>
+    </swiper>
+  </view>
+  <!-- 菜单 -->
+  <view class="home-memu">
+    <block wx:for="{{menus}}" wx:key="id" wx:for-index="idx" wx:for-item="item">
+      <view class="home-memu-item">
+        <image src="{{item.img}}" class="home-memu-item-img"/>
+        <text class="home-memu-item-text">{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+
+  <!-- 商品 -->
+  <view class="home-product">
+      <view class="home-title">新品推荐</view>
+      <view class='home-product-content'>
+        <block wx:for="{{productList}}" wx:key="id" wx:for-index="idx" wx:for-item="item">
+           <template is="product" data="{{...item}}"/>
+        </block>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+ 
+ <template name="product">
+    <view class="home-product-item">
+      <navigator url="/pages/wxshow/page/detail/detail?productId={{productId}}" hover-class="navigator-hover">
+        <image src="{{productImg}}" class="home-product-item-img"/>
+        <view class="home-product-info">
+          <text class="home-product-name">{{productName}}</text>
+          <view class="home-product-price">
+            ￥<text>{{sellPrice}}</text>
+            <!-- <image width="20" height="20"/> -->
+          </view>
+          <view class="home-product-sales">
+            <text class="home-product-sales-count">销量： {{sales}}</text>
+            <image src="../../../image/cart_se.png" class="home-product-sales-cart"/>
+          </view>
+        </view>
+        </navigator>
+    </view>
+</template>
