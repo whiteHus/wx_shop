@@ -36,4 +36,11 @@
       </view>
     </view>
     <template is="share" data="{{shareShow}}"/>
+    <view class="detail-buy">
+      <view class="detail-buy-ph">电话</view>
+      <view class="detail-buy-kf">客服</view>
+      <view class="detail-buy-sc">收藏</view>
+      <view class="detail-buy-cart">加入购物车</view>
+      <view class="detail-buy-atone">立即购买</view>
+    </view>
 </view>

@@ -4,19 +4,23 @@
   width: 100%;
   background-color:rgba(0,0,0,.3) ;
   z-index: 10;
+  left: 750rpx;
 }
-
+.share-main.share-main-fain{
+  left: 0;
+}
 .share-main-con{
-  position: absolute;
-  bottom: -100px;
+  position: fixed;
+  bottom: -250rpx;
   width: 100%;
   background: #fff;
   display: flex;
   flex-direction: column;
-  transition: 10s;
 }
 .share-fain{
    bottom: 0;
+   transition: .3s;
+   z-index: 11;
 }
 .share-main-btn{
   display: flex;
@@ -42,12 +46,13 @@
 }
 .share-main-area-til{
   font-size: 12px;
+  height: 50rpx;
 }
 
 .share-main-cancel{
   text-align: center;
-  border-top:1px solid #f1f1f1;
+  border-top:1rpx solid #f1f1f1;
   font-size:14px;
   color:#333; 
-  line-height: 45px;
+  line-height: 90rpx;
 }

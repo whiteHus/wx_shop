@@ -104,7 +104,10 @@ Page({
     console.log("产品分享");
     this.setData({ shareShow: true });
   },
-
+  //生成海报分享
+  produceShare:function(event){
+    console.log("生成海报分享");
+  },
   //取消分享
   cancelShare: function (event){
     console.log("取消分享");

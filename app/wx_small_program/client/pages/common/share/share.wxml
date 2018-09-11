@@ -1,7 +1,9 @@
  <template name="share">
-  <block  wx:if="{{shareShow}}">
-    <view class="share-main">
-      <view class="{{shareShow?'share-main-con share-fain':'share-main-con'}}">
+  <!-- <block  wx:if="{{shareShow}}"> -->
+
+    <view  class="{{shareShow?'share-main share-main-fain':'share-main'}}">
+    </view>
+    <view class="{{shareShow?'share-main-con share-fain':'share-main-con'}}">
           <view class="share-main-btn">
                 <button class="share-main-area" hover-class='btn_hover' open-type="share">
                   <image class='share-main-area-img' src='/../../../image/wx_share.png' />
@@ -16,6 +18,5 @@
               取消
           </view>
       </view>
-    </view>
-  </block>
+  <!-- </block> -->
  </template>

@@ -96,3 +96,43 @@
   border:2rpx solid #fe0036;
   margin: 0 auto; 
 }
+
+.detail-buy{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  line-height: 100rpx;
+  background: #fff;
+  width: 100%;
+  border-top:1rpx solid #f1f1f1; 
+}
+.detail-buy-ph,
+.detail-buy-kf,
+.detail-buy-sc,
+.detail-buy-cart,
+.detail-buy-atone{
+  text-align: center;
+}
+
+.detail-buy-ph{
+  width: 125rpx;
+  border-right:1rpx solid #f1f1f1; 
+}
+.detail-buy-kf{
+  width: 125rpx;
+  border-right:1rpx solid #f1f1f1; 
+}
+.detail-buy-sc{
+  width: 124rpx;
+}
+.detail-buy-cart{
+  width: 188rpx;
+  color: #fff;
+  background: blue;
+}
+.detail-buy-atone{
+  width: 188rpx;
+  color: #fff;
+  background: #fe0036;
+}
