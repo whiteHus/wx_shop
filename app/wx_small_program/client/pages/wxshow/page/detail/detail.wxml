@@ -1,3 +1,5 @@
+
+<import src="../../../common/share/share.wxml" />
 <!-- 产品详情页 -->
 <view class="detail-main">
     <!-- 产品大图 -->
@@ -17,7 +19,7 @@
           <view class="detail-stock-item">销量：{{productInfo.sales}}</view> 
           <view class="detail-stock-item">限购：1</view>
       </view>
-      <view class="detail-share">
+      <view bindtap="detailShare" class="detail-share">
           <image class="detail-share-img" src="../../../../image/red_share.png"></image>
           <text class="detail-share-text">分享</text>
       </view>
@@ -33,4 +35,5 @@
         <view wx:if="{{!detail}}">评价</view>
       </view>
     </view>
+    <template is="share" data="{{shareShow}}"/>
 </view>

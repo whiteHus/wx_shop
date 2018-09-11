@@ -7,7 +7,7 @@
 		"newFeature": true
 	},
 	"appid": "wx5f79aff405fa2907",
-	"projectname": "weixindemo",
+	"projectname": "wx_small_program",
 	"compileType": "miniprogram",
 	"condition": {}
 }

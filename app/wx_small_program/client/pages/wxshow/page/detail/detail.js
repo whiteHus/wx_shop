@@ -4,6 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    shareShow: false,
     detail: true,
     productList: [
       {
@@ -98,7 +99,18 @@ Page({
       }
     ]
   },
+  //产品分享
+  detailShare: function (event){
+    console.log("产品分享");
+    this.setData({ shareShow: true });
+  },
 
+  //取消分享
+  cancelShare: function (event){
+    console.log("取消分享");
+    this.setData({ shareShow: false });
+  },
+  //点击显示详情或者评价
   showdetail: function(event) {
     let tag=event.currentTarget.dataset.tag;
     this.setData({

@@ -1,0 +1,21 @@
+ <template name="share">
+  <block  wx:if="{{shareShow}}">
+    <view class="share-main">
+      <view class="{{shareShow?'share-main-con share-fain':'share-main-con'}}">
+          <view class="share-main-btn">
+                <button class="share-main-area" hover-class='btn_hover' open-type="share">
+                  <image class='share-main-area-img' src='/../../../image/wx_share.png' />
+                  <text  class='share-main-area-til'>发送给好友</text>
+                </button>
+                <button class="share-main-area" hover-class='btn_hover' bindtap="produceShare">
+                  <image class='share-main-area-img' src='/../../../image/poster.png' />
+                  <text  class='share-main-area-til'>生成海报分享</text>
+                </button>
+          </view>
+          <view class="share-main-cancel" bindtap="cancelShare">
+              取消
+          </view>
+      </view>
+    </view>
+  </block>
+ </template>

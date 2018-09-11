@@ -1,4 +1,5 @@
 @import "../common/product-item-template/product-item-template.wxss";
+
 .home-cantain{
   /* border:1px solid red; */
   display: flex;

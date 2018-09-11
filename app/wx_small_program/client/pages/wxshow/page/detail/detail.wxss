@@ -1,3 +1,5 @@
+
+@import "../../../common/share/share.wxss";
 .detail-main{
   display: flex;
   flex-direction: column;

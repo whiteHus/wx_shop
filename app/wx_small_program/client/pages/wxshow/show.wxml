@@ -1,5 +1,6 @@
 
 <import src="../common/product-item-template/product-item-template.wxml" />
+
 <view class="home-cantain">
   <!-- 轮播图 -->
   <view class="home-picture">
@@ -37,4 +38,5 @@
         </block>
       </view>
   </view>
+ 
 </view>
