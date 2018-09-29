@@ -4,7 +4,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    shareShow: false,
+    shareShow: false,//分享
+    phoneShow:false,//电话
+    collect:false,//收藏
+    addCartShow:false,//加入购物车
+    buyShow: false,//立即购买
     detail: true,
     productList: [
       {
@@ -99,6 +103,31 @@ Page({
       }
     ]
   },
+  //0：电话  1：客服  2：收藏 3：加入购物车 4：立即购买
+  buyOrAddToCart(event){
+    let type = event.currentTarget.dataset.type;
+    switch (type) {
+      case '0':
+        console.log(type);
+        this.setData({ phoneShow: true });
+        break;
+      case '1':
+        console.log(type);
+        break;
+      case '2':
+        console.log(type);
+        this.setData({ collect: true });
+        break;
+      case '3':
+        console.log(type);
+        this.setData({ addCartShow: true });
+        break;
+      case '4':
+        console.log(type); 
+        this.setData({ buyShow: true });
+        break;
+    }
+  },
   //产品分享
   detailShare: function (event){
     console.log("产品分享");
@@ -107,6 +136,9 @@ Page({
   //生成海报分享
   produceShare:function(event){
     console.log("生成海报分享");
+    wx.navigateTo({
+      url: '/pages/wxshow/page/canvasToShare/canvasToShare'
+    })
   },
   //取消分享
   cancelShare: function (event){

@@ -1,0 +1,10 @@
+<!-- 分享页面 -->
+<view class="canvas-main">
+    <block   wx:if="{{false}}">
+      <view  class="canvas-loading">
+        <view style='padding-top:300rpx'>图片正在生成中。。。。</view>
+      </view>
+    </block>
+    <canvas class="canvas-draw" canvas-id="shareCanvas"></canvas>
+    <image class="canvas-draw-img"  src='{{shareImage}}'></image>
+</view>

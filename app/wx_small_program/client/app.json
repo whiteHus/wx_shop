@@ -2,6 +2,8 @@
   "pages": [
     "pages/wxshow/show",
     "pages/wxshow/page/detail/detail",
+    "pages/wxshow/page/canvasToShare/canvasToShare",
+
     "pages/classify/index",
     "pages/Cart/index",
     "pages/mine/index"

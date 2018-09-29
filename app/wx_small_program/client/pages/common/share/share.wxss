@@ -22,6 +22,7 @@
    transition: .3s;
    z-index: 11;
 }
+
 .share-main-btn{
   display: flex;
   flex-direction: row;

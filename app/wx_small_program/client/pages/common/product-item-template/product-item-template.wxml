@@ -11,7 +11,7 @@
           </view>
           <view class="home-product-sales">
             <text class="home-product-sales-count">销量： {{sales}}</text>
-            <image src="../../../image/cart_se.png" class="home-product-sales-cart"/>
+            <image src="https://mmbiz.qpic.cn/mmbiz_png/33MOico7VBXXJKnQ2JDjia2iaibx0mJTYgxyuqe1rdaPvy7gImBicE0RsulV1UehD5YbzpSMPqhLUg5dUfbMLtEOhNw/0?wx_fmt=png" class="home-product-sales-cart"/>
           </view>
         </view>
         </navigator>

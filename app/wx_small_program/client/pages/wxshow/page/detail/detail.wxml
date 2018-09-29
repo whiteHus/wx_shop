@@ -31,16 +31,30 @@
         <view bindtap="showdetail" data-tag="{{0}}" class="{{detail?'detail-tag':'detail-tag detail-select'}}">评价</view>
       </view>
       <view>
-        <view wx:if="{{detail}}">产品详情</view>
-        <view wx:if="{{!detail}}">评价</view>
+        <view wx:if="{{detail}}">
+            <view class="detail-product-info">
+                <image class="detail-product-info-img"
+                src="{{productInfo.productImg}}"/>
+            </view>
+        </view>
+        <view  wx:if="{{!detail}}">
+          <view class="detail-took">
+              暂无评价
+          </view>
+        </view>
       </view>
     </view>
+    <!-- 分享 -->
     <template is="share" data="{{shareShow}}"/>
+    <!-- 购买按钮 -->
     <view class="detail-buy">
-      <view class="detail-buy-ph">电话</view>
-      <view class="detail-buy-kf">客服</view>
-      <view class="detail-buy-sc">收藏</view>
-      <view class="detail-buy-cart">加入购物车</view>
-      <view class="detail-buy-atone">立即购买</view>
+      <view bindtap="buyOrAddToCart" data-type="0" class="detail-buy-ph">电话</view>
+      <view bindtap="buyOrAddToCart" data-type="1" class="detail-buy-kf">客服</view>
+      <view bindtap="buyOrAddToCart" data-type="2" class="detail-buy-sc">收藏</view>
+      <view bindtap="buyOrAddToCart" data-type="3" class="detail-buy-cart">加入购物车</view>
+      <view bindtap="buyOrAddToCart" data-type="4" class="detail-buy-atone">立即购买</view>
+    </view>
+    <view>
+      
     </view>
 </view>

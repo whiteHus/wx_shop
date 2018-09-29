@@ -1,0 +1,21 @@
+
+.canvas-main{
+  text-align: center;
+}
+.canvas-loading{
+  background: url('https://mmbiz.qpic.cn/mmbiz_gif/33MOico7VBXU81cr7j6HREiamgDbKEpSQ32I4S6S5LXbaB6VLhTr2bAzMiacsSvKtaIyhDiaibnsUM3D6b4j1g8XFwg/0?wx_fmt=gif') no-repeat center/contain;
+  height: 500rpx;
+  text-align: center;
+}
+
+.canvas-draw{
+  width: 800px; 
+  height: 1050px;
+  position: fixed;
+  left: -1000px;
+}
+.canvas-draw-img{
+  width:700rpx;
+  height:920rpx;
+  margin-top:25rpx;
+}

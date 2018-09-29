@@ -1,16 +1,16 @@
  <template name="share">
   <!-- <block  wx:if="{{shareShow}}"> -->
 
-    <view  class="{{shareShow?'share-main share-main-fain':'share-main'}}">
+    <view  bindtap="cancelShare" class="{{shareShow?'share-main share-main-fain':'share-main'}}">
     </view>
     <view class="{{shareShow?'share-main-con share-fain':'share-main-con'}}">
           <view class="share-main-btn">
                 <button class="share-main-area" hover-class='btn_hover' open-type="share">
-                  <image class='share-main-area-img' src='/../../../image/wx_share.png' />
+                  <image class='share-main-area-img' src='https://mmbiz.qpic.cn/mmbiz_png/33MOico7VBXVFOEtib8HibzEs9CQ7aW6dvZuyra2iae2k32wz2xZiaFJRb8JaslIcyPUW2netdDwqGcr3j2X8pORhLg/0?wx_fmt=png' />
                   <text  class='share-main-area-til'>发送给好友</text>
                 </button>
                 <button class="share-main-area" hover-class='btn_hover' bindtap="produceShare">
-                  <image class='share-main-area-img' src='/../../../image/poster.png' />
+                  <image class='share-main-area-img' src='https://mmbiz.qpic.cn/mmbiz_png/33MOico7VBXVFOEtib8HibzEs9CQ7aW6dvZX2JVXp6umebibI3nicvJg1MvicUPNwPq0h12pOLjUqaoPpnyQyMZDkmbA/0?wx_fmt=png' />
                   <text  class='share-main-area-til'>生成海报分享</text>
                 </button>
           </view>

@@ -3,6 +3,7 @@
 .detail-main{
   display: flex;
   flex-direction: column;
+  padding-bottom: 120rpx;
 }
 
 .detail-product{
@@ -95,6 +96,25 @@
   height: 0;
   border:2rpx solid #fe0036;
   margin: 0 auto; 
+}
+.detail-product-info{
+  height:550rpx;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+.detail-product-info-img{
+  margin: 0 auto;
+  height:550rpx;
+  width: 550rpx;
+}
+
+.detail-took{
+  min-height: 650rpx;
+  text-align: center;
+  line-height: 650rpx;
+  color: #999;
+  background: url('https://mmbiz.qpic.cn/mmbiz_jpg/33MOico7VBXU81cr7j6HREiamgDbKEpSQ3B89uwEI6BhIdXm5Lwk1ZLHIiaJHDO30fXA8zjYvGr4TvB2uOprGpojw/0?wx_fmt=jpeg') no-repeat center/contain
 }
 
 .detail-buy{
